@@ -24,7 +24,7 @@ public class FXMLDocumentController implements Initializable {
 //    private Button closeButton;
     
     @FXML
-    private void handleCloseButtonAction(ActionEvent e) {
+    private void handleCloseButton(ActionEvent e) {
         Platform.exit();
     }
     

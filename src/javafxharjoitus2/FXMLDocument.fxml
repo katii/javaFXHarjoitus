@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.FXMLDocumentController">
    <children>
       <BorderPane layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
          <center>
@@ -20,15 +19,30 @@
                            <children>
                               <VBox layoutX="16.0" layoutY="14.0" prefHeight="235.0" prefWidth="544.0">
                                  <children>
-                                    <Label text="Etunimi" />
+                                    <Label text="Etunimi">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin></Label>
                                     <TextField />
-                                    <Label text="Sukunimi" />
+                                    <Label text="Sukunimi">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></Label>
                                     <TextField />
-                                    <Label text="Osoite" />
+                                    <Label text="Osoite">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></Label>
                                     <TextField />
-                                    <Label text="Puhelin" />
+                                    <Label text="Puhelin">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></Label>
                                     <TextField />
-                                    <Label text="Sähköpostiosoite" />
+                                    <Label text="Sähköpostiosoite">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></Label>
                                     <TextField />
                                  </children>
                               </VBox>
@@ -42,7 +56,7 @@
                            <children>
                               <SplitPane layoutX="24.0" layoutY="23.0" prefHeight="200.0" prefWidth="200.0">
                                  <items>
-                                    <ListView prefHeight="200.0" prefWidth="200.0" />
+                                    <ListView prefHeight="211.0" prefWidth="198.0" />
                                  </items>
                               </SplitPane>
                               <TextArea layoutX="248.0" layoutY="23.0" prefHeight="200.0" prefWidth="200.0" />
@@ -56,9 +70,9 @@
          <bottom>
             <HBox prefHeight="103.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="closeButton" mnemonicParsing="false" onAction="#handleCloseButtonAction" text="Sulje">
+                  <Button fx:id="closeButton" mnemonicParsing="false" text="Sulje">
                      <HBox.margin>
-                        <Insets left="10.0" right="5.0" />
+                        <Insets left="17.0" right="7.0" />
                      </HBox.margin>
                   </Button>
                   <Button mnemonicParsing="false" text="Tallenna" />
